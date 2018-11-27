@@ -10,11 +10,38 @@ class Achat extends CI_Controller
 {
     public function index()
     {
-        $this->liste();
+        $this->afficherListe();
     }
-    public function liste()
+
+    public function afficherListe()
     {
-        echo "Ceci est la liste des achats, vu depuis le formulaire<br/>";
+        $this->load->view('header');
         $this->load->view('achat/a_liste');
     }
+
+    public function ajouter()
+    {
+
+    }
+
+    public function modifier()
+    {
+
+    }
+
+    public function afficherDetail()
+    {
+
+    }
+
+    public function ajoutRapide()
+    {
+
+    }
+
+    public function aide()
+    {
+
+    }
+
 }
