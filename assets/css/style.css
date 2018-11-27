@@ -1,0 +1,121 @@
+/*commun*/
+
+body {
+    /**/
+    padding:0;
+    margin:0;
+}
+
+.inl_bl{
+    display: inline-block
+}
+
+.space_bt
+{
+    display:flex;
+    justify-content: space-between;
+}
+
+/* *******************
+******* Header *******
+******************** */
+
+header{
+    background: black;
+    color:white;
+}
+
+#connecte{
+
+}
+
+/*******footer*****/
+footer
+{
+    background: #000;
+    color: white;
+    padding: 10px;
+}
+
+
+/***Page d'accueil (connexion)***/
+#blackback
+{
+    background: black;
+    color:white;
+}
+
+#connexion
+{
+    margin: auto;
+    width: 700px;
+    text-align: center;
+    padding-bottom: 90px;
+    margin-bottom : 10px;
+}
+
+#connexion h2{
+    margin:0;
+}
+#connexion a{
+    color: white;
+}
+#connexion a:hover{
+    color: blue;
+}
+#connexion #logo{
+    width:600px;
+}
+
+#connexion form
+{
+    padding-top:10px;
+    margin: auto;
+    width: 300px;
+}
+
+/****menu*/
+
+.menu a{
+    text-decoration:none;
+}
+
+.bloc_menu {
+    margin:0;
+    padding:0;
+    display: inline-block;
+    width: 49.85%;
+    border-width:0;
+
+    color: white;
+    font-family: "DejaVu Sans";
+    text-align: center;
+    vertical-align: middle;
+}
+
+.bloc_main{
+    padding-top: 51px;
+    padding-bottom: 51px;
+}
+.bloc_secondary{
+    padding-top: 112px;
+    padding-bottom: 112px;
+}
+.color1{
+    background-color: blue;
+}
+
+.color2 {
+    background-color:  red;
+
+}
+.color3{
+    background-color: green;
+}
+.color0{
+    background-color: white;
+    color:black !important;
+}
+/*grey*/
+/*darkgrey*/
+/*dimgrey*/
