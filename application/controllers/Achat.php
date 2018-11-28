@@ -15,8 +15,7 @@ class Achat extends CI_Controller
 
     public function afficherListe()
     {
-        $this->load->view('header');
-        $this->load->view('achat/a_liste');
+        $this->layout->view('achat/a_liste');
     }
 
     public function ajouter()

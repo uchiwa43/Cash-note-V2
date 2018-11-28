@@ -7,66 +7,69 @@
  */
 ?>
 
-<a href="" title="A l'aide !">
-    <img src="<?= base_url()?>/assets/img/icon-help.png" height="48"/>
-</a>
-
 <h1>Achats</h1>
 
-<div id="recherche">
+<div class="space_bt">
 
-    <form method="POST">
+    <a href="" title="A l'aide !" >
+        <img src="<?= base_url()?>/assets/img/icon-help.png" height="48"/>
+    </a>
 
-        <div class="space_bt" >
-            <span>Filtrer : </span><input type="submit" width="55" >
-        </div> <br/>
 
-        <div id="bloc_date" class="inl_bl valign_t">
-            <input type="checkbox" name="is_date"/><label>Date d'achat:</label><br/>
-            <table>
-                <tr>
-                    <td><label>Début :</label></td>
-                    <td><input type="date" name="date_debut"/>
-                </tr>
-                <tr>
-                    <td><label>Fin :</label></td>
-                    <td><input type="date" name="date_fin"/></td>
-                </tr>
-            </table>
-        </div>
+    <div id="recherche">
+        <form method="POST">
 
-        <div id="bloc_categorie" class="inl_bl valign_t" >
-            <input type="checkbox" name="is_categorie"/>
-            <label>Categorie :</label><br/>
-            <select name="categorie">
-                <option value="1">Obligatoire</option>
-                <option value="2">Essence</option>
-                <option value="3">Voiture</option>
-                <option value="4">Manga</option>
-                <option value="5">Ciné</option>
-            </select>
-        </div>
+            <div class="space_bt" >
+                <span>Filtrer : </span><input type="submit" width="55" >
+            </div> <br/>
 
-        <!--div id="bloc_type" style="display:inline-block;vertical-align:top;" >
-            <input type="checkbox" name="is_type"/>
-            <label>Type :</label><br/>
-            <select name="type">
-                <option value="1">Obligatoire</option>
-                <option value="2">Loisir</option>
-            </select>
-        </div-->
+            <div id="bloc_date" class="inl_bl valign_t">
+                <input type="checkbox" name="is_date"/><label>Date d'achat:</label><br/>
+                <table>
+                    <tr>
+                        <td><label>Début :</label></td>
+                        <td><input type="date" name="date_debut"/>
+                    </tr>
+                    <tr>
+                        <td><label>Fin :</label></td>
+                        <td><input type="date" name="date_fin"/></td>
+                    </tr>
+                </table>
+            </div>
 
-        <div id="bloc_vendeur" class="inl_bl valign_t">
-            <input type="checkbox" name="is_vendeur"/>
-            <label>Vendeur :</label><br/>
-            <select name="vendeur">
-                <option value="1">Centre 2 - Saint-Etienne</option>
-                <option value="2">DBDH - Saint-Etienne</option>
-            </select>
-        </div>
+            <div id="bloc_categorie" class="inl_bl valign_t" >
+                <input type="checkbox" name="is_categorie"/>
+                <label>Categorie :</label><br/>
+                <select name="categorie">
+                    <option value="1">Obligatoire</option>
+                    <option value="2">Essence</option>
+                    <option value="3">Voiture</option>
+                    <option value="4">Manga</option>
+                    <option value="5">Ciné</option>
+                </select>
+            </div>
 
-        <br/>
-    </form>
+            <!--div id="bloc_type" style="display:inline-block;vertical-align:top;" >
+                <input type="checkbox" name="is_type"/>
+                <label>Type :</label><br/>
+                <select name="type">
+                    <option value="1">Obligatoire</option>
+                    <option value="2">Loisir</option>
+                </select>
+            </div-->
+
+            <div id="bloc_vendeur" class="inl_bl valign_t">
+                <input type="checkbox" name="is_vendeur"/>
+                <label>Vendeur :</label><br/>
+                <select name="vendeur">
+                    <option value="1">Centre 2 - Saint-Etienne</option>
+                    <option value="2">DBDH - Saint-Etienne</option>
+                </select>
+            </div>
+
+        </form>
+    </div>
+
 </div>
 
 

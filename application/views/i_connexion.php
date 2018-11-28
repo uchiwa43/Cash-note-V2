@@ -48,19 +48,6 @@
             </form>
         </div>
 
-        <footer style="background: #000; color: white; padding: 10px">
-
-            <div style="display: inline-block; ">
-                Site réalisé en 2019-2019 par Thomas DUPORT
-            </div>
-            <div style="display: inline-block; padding-left: 400px">
-                En cas de bugs, de propositions d'améliorations ou autre, me contacter :
-                <br>
-                tduport-pro@hotmail.com
-            </div>
-
-        </footer>
-
     </div>
 
 </body>
