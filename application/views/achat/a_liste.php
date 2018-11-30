@@ -78,10 +78,10 @@
 
     <div id="total">Total : 430€ </div>
     <div id="boutons_ajout" class="inl_bl">
-        <a href="<?= site_url()?>/achat/ajouter" class="push_button red_button">Ajout Achat</a>
+        <a href="ajouter" class="push_button red_button">Ajout Achat</a>
     </div>
     <div id="boutons_ajout" class="inl_bl">
-        <a href="a_rapide.html" class="push_button blue_button">Ajout rapide</a>
+        <a href="ajoutRapide" class="push_button blue_button">Ajout rapide</a>
     </div>
 
     <table id="achat" class="datatable display" >
@@ -99,7 +99,7 @@
 
 
         <tr>
-            <td><a href="<?=site_url()?>/achat/afficherDetail">Voir détail</a></td>
+            <td><a href="afficherDetail">Voir détail</a></td>
             <td>SP95</td>
             <td>Essence</td>
             <td>Prévu</td>

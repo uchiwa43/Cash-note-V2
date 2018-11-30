@@ -42,7 +42,8 @@ class Achat extends CI_Controller
 
     public function ajoutRapide()
     {
-
+        $this->layout->ajouter_js('fill_fields_achat_rapide');
+        $this->layout->view('achat/a_ajout_rapide');
     }
 
     public function aide()

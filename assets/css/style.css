@@ -181,9 +181,17 @@ footer
     max-width: 390px;
 }
 
+/**detail d'un achat **/
+
 #detail_achat{
     width: 650px;
 }
+
+/**ajout rapide d'achats**/
+#ar_achat{
+    width: 400px;
+}
+
 /*****boutons*****/
 .push_button {
     position: relative;
