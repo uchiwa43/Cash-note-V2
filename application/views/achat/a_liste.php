@@ -78,7 +78,7 @@
 
     <div id="total">Total : 430€ </div>
     <div id="boutons_ajout" class="inl_bl">
-        <a href="a_ajout.html" class="push_button red_button">Ajout Achat</a>
+        <a href="<?= site_url()?>/achat/ajouter" class="push_button red_button">Ajout Achat</a>
     </div>
     <div id="boutons_ajout" class="inl_bl">
         <a href="a_rapide.html" class="push_button blue_button">Ajout rapide</a>

@@ -14,10 +14,9 @@
 
         <!--mon custom css-->
         <link rel="stylesheet" href="<?php echo base_url()?>assets/css/style.css"/>
-
         <!--css DataTable-->
         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.css">
-
+        <!--CSS inclus dans le controller-->
         <?php foreach ($css as $url){
             echo ' <link rel="stylesheet" type="text/css" media="screen" href=" '. $url .' "> ';
         }?>
@@ -28,22 +27,31 @@
 
         <?php include_once('header.php')?>
 
+
         <div id="contenu">
             <?php echo $output; ?>
         </div>
 
+
         <?php include_once('footer.php')?>
+
 
         <!--Jquery-->
         <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 
-        <!--JS DataTable-->
+        <!--Jquery DataTable-->
         <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script>
         <script>
             $(document).ready( function () {
                 $('.datatable').DataTable();
             } );
         </script>
+
+        <!--JS inclus dans le controller-->
+        <?php foreach($js as $url): ?>
+            <script type="text/javascript" src="<?php echo $url; ?>"></script>
+        <?php endforeach; ?>
+
 
     </body>
 </html>

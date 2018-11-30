@@ -24,20 +24,34 @@ h1{
     text-align:center;
 }
 
+.formulaire{
+    margin:auto;
+    border: black solid 1px;
+    padding: 10px
+}
+
+.form_submit{
+    width: 100px;
+    margin:auto;
+    padding : 0;
+}
+
 .red_label{
     color: red;
 }
 .green_label{
     color: green;
 }
+.grey_label{
+    color: #afb7c0;
+}
+
 
 thead td {
     font-weight: bold;
 }
 
-/* *******************
-******* Header *******
-******************** */
+/* ******* Header ****** */
 
 header{
     background: black;
@@ -139,7 +153,8 @@ footer
 /*darkgrey*/
 /*dimgrey*/
 
-/* ***** Achats ***** */
+/* * Achats * */
+/* **liste achats ** */
 #recherche{
     width:480px;
     margin-left:auto;
@@ -152,6 +167,21 @@ footer
     padding:10px;
     margin-bottom:20px;
 }
+
+/* **ajouter et modifier achat ** */
+
+#div_internet, #div_prix_unite, #div_pnl, #div_essence{
+    display:none;
+}
+
+
+#ajout_achat, #modif_achat {
+    width: 600px;
+}
+#ajout_achat textarea, #modif_achat textarea{
+    max-width: 390px;
+}
+
 
 /*****boutons*****/
 .push_button {

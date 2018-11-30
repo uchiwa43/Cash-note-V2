@@ -96,12 +96,25 @@ class Layout
 
     public function ajouter_js($nom)
     {
+        if(is_string($nom)){
+            if(!empty($nom)){
+                if (file_exists("assets/js/" . $nom . ".js")){
+                    $this->var['js'][] = js_url($nom);
+                    return true;
+                }
+                return "le fichier n'existe pas";
+            }
+            return 1;
+        }
+        return 0;
+/*
         if(is_string($nom) AND !empty($nom) AND file_exists(".assets/js/" . $nom . ".js"))
         {
             $this->var['js'][] = js_url($nom);
             return true;
         }
         return false;
+*/
     }
 
 }
