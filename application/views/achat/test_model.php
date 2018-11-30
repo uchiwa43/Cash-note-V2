@@ -2,8 +2,8 @@
 /**
  * Created by PhpStorm.
  * User: Admin
- * Date: 27/11/2018
- * Time: 17:27
+ * Date: 30/11/2018
+ * Time: 20:29
  */
 ?>
 
@@ -97,21 +97,20 @@
         <td>Achat sur<br/>internet?</td>
         </thead>
 
-
         <?php foreach ($achats as $achat){
             echo "
             <tr>
-                <td><a href='afficherDetail\\".$achat->id."'>Voir <br/>le détail</a></td>
+                <td><a href=\"afficherDetail\">Voir détail</a></td>
                 <td>".$achat->libelle."</td>
                 <td>$achat->categorie</td>
                 <td>$achat->etat</td>
-                <td><span>$achat->reel</span>/$achat->prevu €</td>
+                <td><span class=\"green_label\">$achat->reel/$achat->prevu €</span></td>
                 <td>$achat->moyen_payement</td>
-                <td>$achat->date_achat_reelle<br/><span class='red_label'>$achat->date_debit</span></td>
+                <td>$achat->date_achat_reelle<br/><span class=\"red_label\">$achat->date_debit</span></td>
                 <td>$achat->vendeur</td>
                 <td></td>
-            </tr>
-            ";
+        </tr>
+        ";
         }?>
 
 

@@ -8,14 +8,21 @@
 
 class Achat extends CI_Controller
 {
-    public function index()
+    public function __construct()
     {
+        parent::__construct();
+        $this->load->model('achat_model','model');
+    }
+
+    public function index(){
         $this->afficherListe();
     }
 
     public function afficherListe()
     {
-        $this->layout->view('achat/a_liste');
+        $data['achats'] = $this->model->getAchats();
+        $data['total'] = $this->model->getAchatsSommeTotale();
+        $this->layout->view('achat/a_liste',$data);
     }
 
     public function ajouter()
@@ -29,7 +36,6 @@ class Achat extends CI_Controller
 
     public function modifier()
     {
-
         $this->layout->ajouter_js('show_fields_achat');
         $this->layout->view('achat/a_modif');
     }
@@ -37,7 +43,6 @@ class Achat extends CI_Controller
     public function afficherDetail()
     {
         $this->layout->view('achat/a_detail');
-
     }
 
     public function ajoutRapide()
@@ -46,9 +51,23 @@ class Achat extends CI_Controller
         $this->layout->view('achat/a_ajout_rapide');
     }
 
+    public function test_model()
+    {
+        $this->load->model('achat_model','model');
+/*
+        echo '<pre>';
+        print_r($this->model->getAchatsSommeTotale());
+        echo '</pre>';
+*/
+
+        $data['achats'] = $this->model->getAchats();
+        $data['total'] = $this->model->getAchatsSommeTotale();
+
+        $this->layout->view('achat/test_model',$data);
+    }
+
     public function aide()
     {
-
     }
 
 }

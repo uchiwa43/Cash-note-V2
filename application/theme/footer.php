@@ -8,7 +8,7 @@
 ?>
 <footer class="space_bt">
     <div>
-        Site réalisé en 2019-2019 par Thomas DUPORT
+        Site réalisé en 2018-2019 par Thomas DUPORT
     </div>
 
     <div>
