@@ -24,7 +24,7 @@ h1{
     text-align:center;
 }
 
-.formulaire{
+.cadre_centre{
     margin:auto;
     border: black solid 1px;
     padding: 10px
@@ -174,7 +174,6 @@ footer
     display:none;
 }
 
-
 #ajout_achat, #modif_achat {
     width: 600px;
 }
@@ -182,7 +181,9 @@ footer
     max-width: 390px;
 }
 
-
+#detail_achat{
+    width: 650px;
+}
 /*****boutons*****/
 .push_button {
     position: relative;

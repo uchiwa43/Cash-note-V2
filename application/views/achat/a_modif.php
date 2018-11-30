@@ -6,14 +6,15 @@
  * Time: 13:30
  */
 ?>
+<a href="index">Retour</a>
 
 <h1>Modifier achat</h1>
 
-<form method="get" action="a_liste.html" class="formulaire" id="modif_achat">
+<form method="get" action="a_liste.html" class="cadre_centre" id="modif_achat">
     <table>
         <tr>
             <td><label>Libellé<span class="red_label">*</span> : </label></td>
-            <td><input type="text" name="libelle" /></td>
+            <td><input type="text" name="libelle" required value="" /></td>
         </tr>
         <tr>
             <td><label>Catégorie<span class="red_label">*</span> : </label></td>

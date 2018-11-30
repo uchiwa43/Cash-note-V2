@@ -99,7 +99,7 @@
 
 
         <tr>
-            <td><a href="a_detail.html">Voir détail</a></td>
+            <td><a href="<?=site_url()?>/achat/afficherDetail">Voir détail</a></td>
             <td>SP95</td>
             <td>Essence</td>
             <td>Prévu</td>
